@@ -42,6 +42,7 @@
 >- Realizamos nuestro commit con el comando `git commit -m "nombred_del_commit"` y presionamos enter
 >- Listamos nuestro(s) commit(s) con el siguiente comando `git log` 
 
+![git init](git-init.png)
 
 #### Restaurar un proyecto a como estaba al último commit
 - `git checkout -- .`
