@@ -74,9 +74,11 @@
 
 
 
- >## ****** GIT NO LE DA SEGUIMIENTO A CARPETAS VACIAS ******
+ >## ****** Seguimiento a carpetas ******
+ >- ** Git no da seguimiento a carpetas que se encuentran totalmente vacias
  >- Para mantener un directorio vacio en nuestro repositorio que sabemos que necesitamos en nuestro proyecto solo agregamos dentro del directorio el siguiente archivo **.gitkeep**
- 
+><br ><br >![gitkeep](images/gitkeep.png)<br >
+><br >![gitkeep](images/gitkeep-2.png)<br >
 
 
 >## Creación de ALIAS para nuestros comandos
@@ -90,3 +92,40 @@
 
 
 
+>## Ver las modificaciones 
+>- Para ver los ajustes que realizamos antes de añadirlos al stage insertamos el siguiente código en consola `git diff` y presionamos ENTER
+>- Para ver los ajustes que realizamos después de añadirlos al stage insertamos el siguiente código en consola `git diff --staged` y presionamos ENTER
+
+
+
+>## Actualizar mensaje del commit y revertir commit
+>- Para actualizar el nombre del último commit ingresamos el siguiente código `git commit --amend -m "nuevo_nombre_del_commit"` y presionamos ENTER
+>- Si queremos ingresar a modo edición desde terminal entonces escribimos `git commit --amend` y presionamos ENTER
+>- Una vez que ingresamos presionamos la tecla A y nos movemos con las flechas direccionales. Ya terminada la edición presionamos ESC después escribimos `:wq!`
+><br><br>![git amend](images/amend-consola.png)<br><br>
+>- Para revertir un commit ingresamos el siguiente comando `git reset --soft HEAD^` y presionamos ENTER. Con esto lo que hacemos es eliminar el último commit sin perder los cambios que se habian realizado en los archivos
+>- Igual podemos cambiar por el HEAD por el hash de commit que deseamos revertir `git reset --soft 527f33b` o colocando el numero de commits antes del último `git reset --soft HEAD^2` 
+>- Cuando hacemos el reset a un punto de la historia perdemos de vista todos los commits posteriores, para visualizar nuevamente estos commits ingresamos `git reflog` y presionamos ENTER
+><br><br>![git reflog](images/git-reflog.png)<br><br>
+><br> *&nbsp;El caracter ^ se obtiene en configuración de teclado ingles con SHIFT + 6 y presionamos la tecla de espacio 
+><br> ** `git reset --soft` conserva los cambios 
+><br> *** `git reset --mixed` regresa en el tiempo, mantiene los cambios y saca los archivos del stage 
+><br> **** `git reset --hard` regresa en el tiempo y elimina los cambios 
+
+
+
+>## Mover archivos con git, renombrar y eliminar
+>- Para mover un archivo de un path a otro con git introducimos el siguiente comando `git mv nombre_archivo.html htmls/nombre_archivo.html` y presionamos ENTER
+>- Al igual si deseamos renombrar el archivo al mismo tiempo introducimos el siguiente comando `git mv nombre_archivo.html htmls/nuevo_nombre_archivo.html` y presionamos ENTER
+>- Al igual si deseamos renombrar el archivo y dejarlo en el mismo path con el siguiente comando `git mv nombre_archivo.html nuevo_nombre_archivo.html` y presionamos ENTER
+>- Para eliminar un archivo con git introducimos el siguiente comando `git rm nombre_archivo.html` y presionamos ENTER
+><br><br>* Con estas acciones se agrega al stage dicho archivo para que nosotros creemos un nuevo commit
+
+
+
+## Git ignore
+>- Cuando no queremos darle seguimiento a una carpeta o archivo generamos un archivo llamado **.gitignore** en la raíz del proyecto, el lugar donde se encuentra nuestro archivo **.git**
+><br ><br >![gitignore](images/gitignore-1.png)<br >
+><br >
+>- En dicho archivo ingresamos los nombres de todos los archivos y carpetas que deseamos ignorar en git
+><br >![gitignore](images/gitignore-2.png)<br >
