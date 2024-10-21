@@ -142,8 +142,33 @@
 
 
 
-## Ramas, uniones, conflictos y tags
->- Se recomienda trabajar en ramas nuevas funcionalidades de nuestros desarrollos
->- Para crear una rama en git introducimos el siguiente comando `git branch nombre_de_la_rama` y presionamos ENTER
->- Para ver todas nuestras ramas, incluida la que acabamos de crear `git branch` y presionamos ENTER
->- Para movernos a una rama `git checkout nombre_de_la_rama` y presionamos ENTER
+## Ramas, uniones y conflictos
+>- Crear una rama en git introducimos el siguiente comando `git branch nombre_de_la_rama` y presionamos ENTER
+>- Ver todas nuestras ramas, incluida la que acabamos de crear `git branch` y presionamos ENTER
+>- Movernos a una rama `git checkout nombre_de_la_rama` y presionamos ENTER
+>- Crear una rama y movernos al mismo tiempo `git checkout -b nombre_de_la_rama` y presionamos ENTER
+>- Unir una rama a otra `git checkout nombre_de_la_rama_a_la_que_queremos_unir` y presionamos ENTER
+>- Después `git merge nombre_de_la_rama_que_queremos_unir` y presionamos ENTER
+>- Al unir ramas desde consola puede que nos arroje el mensaje de Merge branch, si es así debemos ingresar el nombre de un nuevo commit para que git nos guarde los cambios de esta unión. Después presionamos `ESC :wq!` y presionamos ENTER 
+>- Eliminar una rama `git branch -d nombre_de_la_rama_que_queremos_eliminar` y presionamos ENTER
+>- Eliminar una rama de manera forzada `git branch -d nombre_de_la_rama_que_queremos_eliminar -f` y presionamos ENTER
+><br><br> *&nbsp;Se recomienda trabajar en ramas nuevas funcionalidades de nuestros desarrollos
+><br> ** Al igual una vez que hacemos merge de una rama que sabemos que ya no sufrira más cambios se recomienda eliminarla
+
+
+
+> ## Tags o etiquetas
+>- Los tags o etiquetas no son más que referencias a un commit en especifico
+>- Los tags son utilizados para marcar versiones o releases de nuestros desarrollos
+><br ><br >![gitignore](images/git-tag.png)<br >
+><br >
+>- Enlistar todos los tags `git tag` y presionamos ENTER
+>- Eliminar un tag `git tag -d nombre_del_tag` y presionamos ENTER
+>- Crear una versión anotada `git tag -a v1.0.0 -m "Versión 1.0.0 lista"
+>- Agregar tags a commits anteriores `git tag -a v0.1.0 hash_del_commit -m "nombre de la etiqueta"`
+><br ><br >![gitignore](images/git-tag2.png)<br >
+><br >
+>- Para ver más información de un tag en especifico `git show nombre_del_tag`
+><br ><br >![gitignore](images/git-tag3.png)<br >
+><br >
+>- *&nbsp;Versión 1.0.0 1(cambios importantes).0(agragamos una nueva funcionalidad).0(corrección de errores)
