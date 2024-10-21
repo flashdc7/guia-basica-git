@@ -6,8 +6,12 @@
 
 
 
+
+
 ## Instalaciones Plugins
 >1. [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+
 
 
 
@@ -15,6 +19,8 @@
 >- `git --help`
 >- Ej. `git --help commit` o `git --help config`
 >- Para salir de la ayuda solo presionamos la letra Q
+
+
 
 
 
@@ -33,6 +39,10 @@
 >- `git config --global -e`
 
 > Para salir del modo de edición:
+>- Presionamos `ESC`, después escribimos `:q!` y presionamos `ENTER` si no queremos guardar ningún cambio
+>- Presionamos `ESC`, después escribimos `:wq!` y presionamos `ENTER` para guardar cambios y salir
+
+
 >- Presionamos `ESC`, después escribimos `:q!` y presionamos `ENTER` si no queremos guardar ningún cambio
 >- Presionamos `ESC`, después escribimos `:wq!` y presionamos `ENTER` para guardar cambios y salir
 
