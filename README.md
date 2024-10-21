@@ -129,3 +129,11 @@
 ><br >
 >- En dicho archivo ingresamos los nombres de todos los archivos y carpetas que deseamos ignorar en git
 ><br >![gitignore](images/gitignore-2.png)<br >
+
+
+
+## Ramas, uniones, conflictos y tags
+>- Se recomienda trabajar en ramas nuevas funcionalidades de nuestros desarrollos
+>- Para crear una rama en git introducimos el siguiente comando `git branch nombre_de_la_rama` y presionamos ENTER
+>- Para ver todas nuestras ramas, incluida la que acabamos de crear `git branch` y presionamos ENTER
+>- Para movernos a una rama `git checkout nombre_de_la_rama` y presionamos ENTER
