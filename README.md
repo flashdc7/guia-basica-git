@@ -84,7 +84,7 @@
 
 
 
- >## ****** Seguimiento a carpetas ******
+ >## Seguimiento a carpetas
  >- ** Git no da seguimiento a carpetas que se encuentran totalmente vacias
  >- Para mantener un directorio vacio en nuestro repositorio que sabemos que necesitamos en nuestro proyecto solo agregamos dentro del directorio el siguiente archivo **.gitkeep**
 ><br ><br >![gitkeep](images/gitkeep.png)<br >
@@ -97,8 +97,6 @@
 >- Para modificar un alias tecleamos el siguiente código `git config --global -e`
 ><br><br>![git alias](images/alias.png) <br><br>
 >- Una vez que terminamos la edición presionamos ESC después :wq!
->- Y a continuación corremos nuestro alias y se vería de la siguiente forma
-><br><br>![git alias](images/alias-lg.png) <br><br>
 
 
 
@@ -112,7 +110,6 @@
 >- Para actualizar el nombre del último commit ingresamos el siguiente código `git commit --amend -m "nuevo_nombre_del_commit"` y presionamos ENTER
 >- Si queremos ingresar a modo edición desde terminal entonces escribimos `git commit --amend` y presionamos ENTER
 >- Una vez que ingresamos presionamos la tecla A y nos movemos con las flechas direccionales. Ya terminada la edición presionamos ESC después escribimos `:wq!`
-><br><br>![git amend](images/amend-consola.png)<br><br>
 >- Para revertir un commit ingresamos el siguiente comando `git reset --soft HEAD^` y presionamos ENTER. Con esto lo que hacemos es eliminar el último commit sin perder los cambios que se habian realizado en los archivos
 >- Igual podemos cambiar por el HEAD por el hash de commit que deseamos revertir `git reset --soft 527f33b` o colocando el numero de commits antes del último `git reset --soft HEAD^2` 
 >- Cuando hacemos el reset a un punto de la historia perdemos de vista todos los commits posteriores, para visualizar nuevamente estos commits ingresamos `git reflog` y presionamos ENTER
@@ -160,15 +157,18 @@
 > ## Tags o etiquetas
 >- Los tags o etiquetas no son más que referencias a un commit en especifico
 >- Los tags son utilizados para marcar versiones o releases de nuestros desarrollos
-><br ><br >![gitignore](images/git-tag.png)<br >
+><br ><br >![git tag1](images/git-tag.png)<br >
 ><br >
 >- Enlistar todos los tags `git tag` y presionamos ENTER
 >- Eliminar un tag `git tag -d nombre_del_tag` y presionamos ENTER
 >- Crear una versión anotada `git tag -a v1.0.0 -m "Versión 1.0.0 lista"
 >- Agregar tags a commits anteriores `git tag -a v0.1.0 hash_del_commit -m "nombre de la etiqueta"`
-><br ><br >![gitignore](images/git-tag2.png)<br >
+><br ><br >![git tag2](images/git-tag2.png)<br >
 ><br >
 >- Para ver más información de un tag en especifico `git show nombre_del_tag`
-><br ><br >![gitignore](images/git-tag3.png)<br >
+><br ><br >![git tag3](images/git-tag3.png)<br >
 ><br >
 >- *&nbsp;Versión 1.0.0 1(cambios importantes).0(agragamos una nueva funcionalidad).0(corrección de errores)
+
+
+
