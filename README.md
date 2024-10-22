@@ -158,17 +158,14 @@
 > ## Tags o etiquetas
 >- Los tags o etiquetas no son más que referencias a un commit en especifico
 >- Los tags son utilizados para marcar versiones o releases de nuestros desarrollos
-><br ><br >![git tag1](images/git-tag.png)<br >
-><br >
+><br ><br >![git tag1](images/git-tag.png)
 >- Enlistar todos los tags `git tag` y presionamos ENTER
 >- Eliminar un tag `git tag -d nombre_del_tag` y presionamos ENTER
 >- Crear una versión anotada `git tag -a v1.0.0 -m "Versión 1.0.0 lista"
 >- Agregar tags a commits anteriores `git tag -a v0.1.0 hash_del_commit -m "nombre de la etiqueta"`
-><br ><br >![git tag2](images/git-tag2.png)<br >
-><br >
+><br ><br >![git tag2](images/git-tag2.png)
 >- Para ver más información de un tag en especifico `git show nombre_del_tag`
-><br ><br >![git tag3](images/git-tag3.png)<br >
-><br >
+><br ><br >![git tag3](images/git-tag3.png)
 >- *&nbsp;Versión 1.0.0 1(cambios importantes).0(agragamos una nueva funcionalidad).0(corrección de errores)
 
 
