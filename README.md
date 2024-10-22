@@ -1,4 +1,4 @@
-# Git
+# Git.
 
 ## Instalacion Git
 >1. https://git-scm.com/
