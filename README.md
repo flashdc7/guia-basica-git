@@ -67,6 +67,7 @@
 
 >## Restaurar un proyecto a como estaba al último commit
 >- `git checkout -- .`
+>- Si ldeseamos solo revertir los cambios de un solo archivo `git checkout -- nombre_del_archivo.html` y presionamos ENTER
 
 
 
@@ -172,3 +173,24 @@
 
 
 
+>## Git stash
+>- Con esta opción podemos guardar cambios en la rama de manera virtual y regresar nuestro proyecto a como estaba al último commit, esto es util cuando estamos trabajando en una nueva funcionalidad que aún no terminamos pero necesitamos desplegar nuestro proyecto 
+>- Corremos el siguiente comando `git stash` y presionamos ENTER
+>- Enlistar nuestros stash `git stash list`
+>- Regresar nuestros cambios guardados en el stash `git stash pop`
+>- Eliminar los stash `git stash clear`
+>- Recuperar un stash en particular de una lista de stash `git stash apply stash@{2}`
+>- Eliminar un stash en particular de una lista de stash `git stash drop stash@{2}`
+>- Ver los ajustes realizados en un stash en particular de una lista de stash `git stash show stash@{2}`
+>- Agregar un título al stash al momento de crearlo `git stash save "Nombre que deseamos para nuestro stash"`
+>- Mostrar las referencias de cada stash `git stash list --stat`
+
+
+
+>## Git rebase
+>- El rebase ayuda a actualizar cambios en una rama desde otra rama
+>- Para hacer el rebase tenemos que movernos a la rama en la cual queremos agregarlos cambios y/o commits posteriores 
+>- Ingresamos `git rebase nombre_de_la_rama` y presionamos ENTER
+>- Una vez que terminamos esto podemos hacer un merge de ambas ramas si así lo deseamos
+>- Generar un rebase interactivo `git rebase -i HEAD~4` 
+>- *&nbsp;Para obtener el caracter de la virgulilla presionamos `OPTION + Ñ` ó `OPTION + N + ESPACIO`
